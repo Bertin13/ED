@@ -1,4 +1,4 @@
-\documentclass[10pt]{report}
+\documentclass[12pt]{article}
 
 \usepackage{amsfonts}
 \usepackage{textcomp}
@@ -7,7 +7,7 @@
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amssymb}
-\usepackage{graphicx}
+%\usepackage{graphicx}
 \usepackage{graphics,color}
 \usepackage{geometry}
 \usepackage{color}
@@ -16,31 +16,27 @@
 \usepackage{multicol}
 \usepackage{wrapfig}
 
- \topmargin .5cm        % read Lamport p.163
- \oddsidemargin .5cm   % read Lamport p.163
- \evensidemargin -0.02cm  % same as oddsidemargin but for left-hand pages
- \textwidth 16cm
- \textheight 26cm 
+\topmargin -1.5cm        
+\oddsidemargin .5cm  
+\evensidemargin -0.02cm
+\textwidth 16cm
+\textheight 22cm 
 
 \theoremstyle{definition} 
 \newtheorem{ej}{} 
-\newtheorem{p}{}
-
-\hyphenation{desho-nes-ti-dad}
 
 \begin{document}
-\pagestyle{empty}
 
 
-\begin{center}
-\large \textbf{Ecuaciones Diferenciales} 
-\end{center}
+\author{Bertín Hernández Trejo\\ Manuel Octaviano Martínez Cordero}
+\title{Ecuaciones Diferenciales Ordinarias}
+\maketitle
 
-\
+\section{Introducción}
+\subsection{Comprobación}
 
-\begin{ej}
-Verifique que las siguientes funciones (explícitas o implícitas) son soluciones de la correspondiente ecuación diferencial.
-
+\begin{enumerate}
+\item Verifique que las siguientes funciones (explícitas o implícitas) son soluciones de la correspondiente ecuación diferencial.
 \begin{multicols}{2}
 \begin{itemize}
  \item [a)] $y=x^2+c$;
@@ -50,7 +46,7 @@ Verifique que las siguientes funciones (explícitas o implícitas) son solucione
  \item [e)] $y=c_{1}\sen 2x+c_{2}\cos 2x$; 
  \item [f)] $y=c_{1}e^2x+c_{2}e^{-2x}$; 
  \item [g)] $y^2=x^2-cx$; 
- \item [h)] $y+c/x$; 
+ \item [h)] $y=x+c/x$; 
  \item [i)] $y=ce^{y/x}$; 
  \item [j)] $y+\sen y=x$; 
 
@@ -66,17 +62,33 @@ Verifique que las siguientes funciones (explícitas o implícitas) son solucione
 \item [] $(y\cos y-\sen y+x)y'=y$
 \end{itemize}
 \end{multicols}
-\end{ej}
 
-\begin{ej}
-\begin{itemize}
- \item  [a)] Bosqueje el campo de drecciones de la ecuación diferencial $\dfrac{dy}{dx}=\dfrac{4x}{y}$. 
- \item [b)] Verifique que las líneas rectas $y=\pm 2x$ son 
- curvas solución, siempre que $x\neq 0$. 
- \item [c)] Bosqueje la curva solución con la condición inicial $y(0)=2$. 
- \item [d)] Bosqueje la curva solución con la  condición inicial $y(2)=1$.
+\item
+\end{enumerate}
+
+\subsection{Campo de direcciones}
+
+\begin{enumerate}
+ \item  \begin{itemize}
+  \item  [a)] Bosqueje el campo de drecciones de la ecuación diferencial $\dfrac{dy}{dx}=\dfrac{4x}{y}$. 
+  \item [b)] Verifique que las líneas rectas $y=\pm 2x$ son 
+  curvas solución, siempre que $x\neq 0$. 
+  \item [c)] Bosqueje la curva solución con la condición inicial $y(0)=2$. 
+  \item [d)] Bosqueje la curva solución con la  condición inicial $y(2)=1$.
  \end{itemize}
-\end{ej}
+ 
+ \item 
+ \end{enumerate}
+
+\section{Ecuaciones diferenciales de primer orden}
+
+\subsection{Ecuaciones separables}
+
+\subsection{Ecuaciones homogéneas}
+
+\newpage
+
+\section{Bibliografía}
 
 \end{document}
 
